@@ -1,0 +1,15 @@
+[Unit]
+Description=SSTV Selfie Station
+After=multi-user.target sound.target
+Wants=sound.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/sstv-selfie-station
+ExecStart=/opt/sstv-selfie-station/.venv/bin/python /opt/sstv-selfie-station/sstv_selfie_station.py
+Restart=on-failure
+RestartSec=3
+User=root
+
+[Install]
+WantedBy=multi-user.target

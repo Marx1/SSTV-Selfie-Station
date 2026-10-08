@@ -1,0 +1,12 @@
+[Unit]
+Description=Hide tty1 cursor
+After=getty@tty1.service
+
+[Service]
+Type=oneshot
+Environment=TERM=linux
+ExecStart=/bin/sh -c '/usr/bin/setterm --cursor off > /dev/tty1'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

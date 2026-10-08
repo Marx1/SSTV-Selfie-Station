@@ -1,0 +1,23 @@
+# SSTV Selfie Station
+#
+# Raspberry Pi OS apt packages:
+#
+# python3
+# python3-pip
+# python3-venv
+# python3-evdev
+# python3-gpiozero
+# python3-lgpio
+# python3-pil
+# python3-numpy
+# python3-av
+# python3-serial
+# v4l-utils
+# alsa-utils
+# fbset
+#
+# Optional CSI camera:
+# python3-picamera2
+#
+# Install inside the project venv:
+PySSTV
